@@ -1,0 +1,129 @@
+/* 用户信息 */
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  height: 300rpx;
+}
+
+/* 头像 */
+
+.userinfo-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 48rpx;
+  border-radius: 70rpx;
+}
+
+.userinfo_right {
+  margin-left: 40rpx;
+  color: #fff;
+}
+
+.userinfo_nickname {
+  font-size: 48rpx;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+}
+
+/* 用户角色 */
+
+.userinfo_des_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.userinfo_role {
+  display: block;
+  font-size: 13px;
+}
+
+/* 更新信息按钮 */
+
+.btn-update {
+  font-size: 20rpx;
+  color: #fff;
+}
+
+.btn-update>button, .btn-exit {
+  height: 40rpx;
+  padding: 6rpx 0 0 50rpx;
+  margin-left: 24rpx;
+  border-radius: 20rpx;
+  background-color: transparent;
+  box-sizing: border-box;
+  opacity: 0.6;
+  font-size: 12px;
+  color: #fff;
+  line-height: 32rpx;
+  z-index: 10;
+}
+
+.btn-update>button::after {
+  border: none;
+}
+
+/* tab选项卡 */
+
+.tab-bar {
+  height: 100rpx;
+  display: flex;
+}
+
+.tab-item {
+  flex: 1;
+  display: inline-block;
+  background: #333;
+  color: #aaa;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+
+/* 选中样式 */
+
+.tab-Selected {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-Selected::after {
+  content: '';
+  height: 4rpx;
+  width: 40rpx;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -20rpx;
+}
+
+/* 文章列表样式 */
+
+.list_container {
+  margin: 48rpx;
+}
+
+.list-item {
+  margin-top: 20rpx;
+}
+
+.list-item>text {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #fff;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.tips {
+  text-align: center;
+  color: #959595;
+  font-size: 15px;
+  line-height: 400rpx;
+}
